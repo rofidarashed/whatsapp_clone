@@ -31,41 +31,6 @@ class _ChatScreenState extends State<ChatScreen> {
         children: [
           Expanded(child: chatBubbleList()),
           MessageInput(onMessageInput: _newInput),
-          // Container(
-          //   padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-          //   height: 60,
-          //   child: Row(
-          //     children: [
-          //       Expanded(
-          //         child: TextField(
-          //           controller: _textController,
-          //           decoration: InputDecoration(
-          //             hintText: "Type a message",
-          //             border: InputBorder.none,
-          //           ),
-          //         ),
-          //       ),
-          //       IconButton(icon: Icon(Icons.attach_file), onPressed: () {}),
-          //       IconButton(icon: Icon(Icons.camera_alt), onPressed: () {}),
-          //       IconButton(
-          //         icon: Icon(Icons.send),
-          //         onPressed: () {
-          //           if (_textController.text.isNotEmpty) {
-          //             setState(() {
-          //               messages.add(
-          //                 ChatMessageModel(
-          //                   messageContent: _textController.text,
-          //                   messageType: "sender",
-          //                 ),
-          //               );
-          //               _textController.clear();
-          //             });
-          //           }
-          //         },
-          //       ),
-          //     ],
-          //   ),
-          // ),
         ],
       ),
     );

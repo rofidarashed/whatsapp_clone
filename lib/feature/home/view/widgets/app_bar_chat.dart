@@ -14,12 +14,12 @@ AppBar appBarChat() {
       padding: const EdgeInsets.symmetric(horizontal: 15),
       child: Row(
         children: [
-          Builder(builder:(context)=> buildBackButton(context), ),
-          
+          Builder(builder: (context) => buildBackButton(context)),
+
           CircleAvatar(backgroundImage: profile, radius: 20),
           Text("  $sender", style: white16),
           Spacer(),
-          IconButton(icon: Icon(Icons.videocam), onPressed: () {}),
+          IconButton(icon: Icon(Icons.videocam_outlined), onPressed: () {}),
           IconButton(icon: Icon(Icons.call), onPressed: () {}),
           popupMenuButtonHome(),
         ],
